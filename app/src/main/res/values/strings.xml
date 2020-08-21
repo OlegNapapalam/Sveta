@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Продам гараж</string>
+    <string name="app_name">Светофор</string>
+    <string name="button_red">Красный</string>
+    <string name="button_green">Зеленый</string>
+    <string name="button_yellow">Желтый</string>
+
 </resources>

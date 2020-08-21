@@ -1,34 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false">
-
-
-    <LinearLayout
-        android:id="@+id/Left"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#F44336"
-        android:orientation="horizontal"
-        android:visibility="visible"></LinearLayout>
+    android:background="#272727"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:visibility="visible">
 
     <LinearLayout
-        android:id="@+id/Center"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:id="@+id/Svet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFEB3B"
-        android:orientation="horizontal"
-        android:visibility="visible"></LinearLayout>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TopBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:id="@+id/DownBAr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/Red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_sem_black"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Green"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_sem_black"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/Yellow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_sem_black"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Right"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#4CAF50"
-        android:orientation="horizontal"
-        android:visibility="visible"></LinearLayout>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonRedClick"
+            android:text="@string/button_red"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
+        <Button
+            android:id="@+id/buttonYellow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonYellowClick"
+            android:text="@string/button_yellow"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonGreenClick"
+            android:text="@string/button_green"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
 </LinearLayout>
