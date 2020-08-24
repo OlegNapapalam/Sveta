@@ -27,12 +27,12 @@ class MainActivity : Activity() {
     }
     fun buttonYellowClick(view: View) {
         makeRed?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeGreen?.setBackgroundResource(R.drawable.ic_sem_yellow)
-        makeYellow?.setBackgroundResource(R.drawable.ic_sem_black)
+        makeGreen?.setBackgroundResource(R.drawable.ic_sem_black)
+        makeYellow?.setBackgroundResource(R.drawable.ic_sem_yellow)
     }
     fun buttonGreenClick(view: View) {
         makeRed?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeGreen?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeYellow?.setBackgroundResource(R.drawable.ic_sem_green)
+        makeGreen?.setBackgroundResource(R.drawable.ic_sem_green)
+        makeYellow?.setBackgroundResource(R.drawable.ic_sem_black)
     }
 }

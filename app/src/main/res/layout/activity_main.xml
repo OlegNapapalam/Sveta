@@ -29,31 +29,32 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:baselineAligned="false"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/Red"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
                 android:background="@drawable/ic_sem_black"
                 android:orientation="vertical">
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/Green"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:id="@+id/Yellow"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
                 android:background="@drawable/ic_sem_black"
                 android:orientation="vertical" />
 
             <LinearLayout
-                android:id="@+id/Yellow"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:id="@+id/Green"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
                 android:background="@drawable/ic_sem_black"
                 android:orientation="vertical" />
         </LinearLayout>
