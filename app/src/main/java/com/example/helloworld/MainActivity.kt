@@ -3,36 +3,35 @@ package com.example.helloworld
 import android.app.Activity
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : Activity() {
-
-    var makeRed: LinearLayout? = null
-    var makeGreen: LinearLayout? = null
-    var makeYellow: LinearLayout? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        makeRed = findViewById(R.id.Red)
-        makeGreen = findViewById(R.id.Green)
-        makeYellow = findViewById(R.id.Yellow)
+
+        Red.isEnabled = false;
+        Yellow.isEnabled = false;
+        Green.isEnabled = false;
     }
 
     fun buttonRedClick(view: View) {
-        makeRed?.setBackgroundResource(R.drawable.ic_sem_red)
-        makeGreen?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeYellow?.setBackgroundResource(R.drawable.ic_sem_black)
+        Red.isEnabled = true;
+        Yellow.isEnabled = false;
+        Green.isEnabled = false;
+
     }
     fun buttonYellowClick(view: View) {
-        makeRed?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeGreen?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeYellow?.setBackgroundResource(R.drawable.ic_sem_yellow)
+        Red.isEnabled = false;
+        Yellow.isEnabled = true;
+        Green.isEnabled = false;
+
     }
     fun buttonGreenClick(view: View) {
-        makeRed?.setBackgroundResource(R.drawable.ic_sem_black)
-        makeGreen?.setBackgroundResource(R.drawable.ic_sem_green)
-        makeYellow?.setBackgroundResource(R.drawable.ic_sem_black)
+        Red.isEnabled = false;
+        Yellow.isEnabled = false;
+        Green.isEnabled = true;
+
     }
 }

@@ -34,28 +34,28 @@
 
             <LinearLayout
                 android:id="@+id/Red"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="@dimen/sizeRing"
+                android:layout_height="@dimen/sizeRing"
 
-                android:background="@drawable/ic_sem_black"
+                android:background="@drawable/red_or_black"
                 android:orientation="vertical">
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/Yellow"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="@dimen/sizeRing"
+                android:layout_height="@dimen/sizeRing"
 
-                android:background="@drawable/ic_sem_black"
+                android:background="@drawable/yellow_or_black"
                 android:orientation="vertical" />
 
             <LinearLayout
                 android:id="@+id/Green"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="@dimen/sizeRing"
+                android:layout_height="@dimen/sizeRing"
 
-                android:background="@drawable/ic_sem_black"
+                android:background="@drawable/green_or_black"
                 android:orientation="vertical" />
         </LinearLayout>
 
